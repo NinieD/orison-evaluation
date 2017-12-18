@@ -1,0 +1,88 @@
+.hero-main__section{
+    &__works{
+        text-align: center;
+        background-color: $gris;
+        padding: 50px 0 50px;
+
+        &__video{
+            padding-top: 50px;
+            width: 100%;
+        }
+    }
+    &__standing{
+        background-color: $dark;
+        padding: 50px 0 50px;
+        &__container{
+            &__img{
+                display: block;
+                padding: 40px 0 50px;
+                max-width: 100%;
+                margin: auto;
+            }
+            @media screen and(min-width: 560px){
+                img[alt="orison tower"]{
+                max-height: 500px;
+                max-width: 100%;
+                }
+            }
+        }
+    }
+    &__choose{
+        padding: 50px 0 50px;
+
+        .wrapper{
+            width: 80%;
+        }
+        &__container{
+            &__contain{
+                &__img{
+                    height: 85px;
+                    width: 85px;
+                }
+            }
+        }
+    }
+    &__hightly{
+        background-color: $gris;
+        &__container{
+            &__texts{
+                margin: auto;
+                width: 70%;
+                padding: 50px 0 70px
+            }
+            &__img{
+                max-width: 100%;
+            }
+        }
+    }
+    &__power{
+        padding: 50px 25px 50px;
+        background-color: $dark;
+        &__img{
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    &__papers{
+        padding: 50px 0 50px;
+        background-color: $gris-blue;
+        .wrapper{
+            width: 75%;
+        }
+        &__paper{
+            &__img{
+                max-width: 80%;
+                margin-bottom: 35px;
+                @media screen and(min-width: 560px){
+                    max-width: 40%;
+                }
+            }
+            &__body{
+                padding-bottom: 30px;
+            }
+            &__logo{
+                max-width: 100%;
+            }
+        }
+    }
+}

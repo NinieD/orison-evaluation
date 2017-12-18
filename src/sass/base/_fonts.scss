@@ -45,6 +45,7 @@ $gris-blue:#819097;
     font-family: $bold;
     font-size: 11px;
     color: white;
+    letter-spacing: 2px;
 }
 //nav//
 .navigation__container{
@@ -63,10 +64,12 @@ $gris-blue:#819097;
     font-size: 3rem;
     line-height: 49px;
     font-family: $light;
+
     span{
         color: $gris-text;
         font-size: 2.25rem;
         line-height: 37px;
+
     }
 }
 .hero-main__section__works{
@@ -75,7 +78,8 @@ $gris-blue:#819097;
         font-family: $bold;
         font-size: 1rem;
         line-height: 17px;
-        color: $gris-blue
+        color: $gris-blue;
+        letter-spacing: 2px;
     }
     &__body{
         color: white;
@@ -91,41 +95,124 @@ $gris-blue:#819097;
         font-size: 1rem;
         line-height: 17px;
         color: $gris-blue;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+
+
         span{
+            display: block;
+            text-transform: none;
+            letter-spacing: 0;
             font-family: $light;
             font-size: 1.5rem;
             color: white;
             line-height: 25px;
+            padding-top: 30px;
         }
     }
     &__container__texts__body{
         color: $gris-text;
-        font-family: $light;
+        font-family: $reg;
         font-size: 1rem;
         line-height: 24px;
+        padding-bottom: 20px;
     }
 }
 .hero-main__section__choose{
+    text-align: center;
     &__title{
         text-transform: uppercase;
         font-family: $bold;
         font-size: 1rem;
         line-height: 17px;
         color: $gris-blue;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
     }
     &__body{
         color: $dark;
         font-family: $light;
         font-size: 1.25rem;
         line-height: 30px;
+        padding-bottom: 10px;
     }
     &__container__contain__title{
         text-transform: uppercase;
         color: $dark;
         font-size: 0.88rem;
         letter-spacing: 2px;
+        padding: 15px 0 10px;
     }
     &__container__contain__body{
-        
+        color: $gris-clair-text;
+        font-family: $light;
+        font-size: 1rem;
+        line-height: 22px;
+        padding-bottom: 30px;
+    }
+}
+.hero-main__section__hightly{
+    &__container__texts__title{
+        font-size: 1.5rem;
+        color: white;
+        font-family: $light;
+        line-height: 28px;
+
+    }
+    &__container__texts__body{
+        color:$gris-text;
+        font-family: $light;
+        font-size: 1rem;
+        line-height: 22px;
+
+    }
+}
+.hero-main__section__power{
+    text-align: center;
+    &__title{
+        color: white;
+        font-family: $light;
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+    &__body{
+        color:$gris-text;
+        font-family: $reg;
+        font-size: 1.25rem;
+    }
+}
+.hero-main__section__papers__paper{
+    text-align: center;
+    &__body{
+        color: #000;
+        font-size: 1rem;
+        line-height: 28px;
+        font-family: $light;
+
+    }
+}
+///FOOTER///
+.footer{
+    color: #fff;
+    font-family: $reg;
+    &__links__link{
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 12px;
+        letter-spacing: 2px;
+        font-size: 0.69rem;
+    }
+    &__social__link{
+        color: #fff;
+        font-size: 1rem;
+        line-height: 17px;
+    }
+
+    &__copyright{
+        text-align: center;
+        color: $gris-text;
+        font-family: $light;
+        font-size: 1rem;
+        line-height: 21px;
     }
 }

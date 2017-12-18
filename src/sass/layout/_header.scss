@@ -1,0 +1,25 @@
+.hero-home{
+    margin-top: 69px;
+    height: 100%;
+    background: url(../img/Orison-Hero-5.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    &__title{
+        padding: 50px 0 50px;
+        span{
+            padding-top: 15px;
+            display: block;
+        }
+    }
+    &__links{
+        padding-bottom: 70px;
+        &__link{
+            margin-top: 10px;
+        }
+        .btn--white:hover{
+            background-color: #fff;
+            color: $dark;
+            border: 1px solid #fff;
+        }
+    }
+}
