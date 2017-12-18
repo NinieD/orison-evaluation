@@ -1,0 +1,73 @@
+NEWS ROUNDUP
+What We’re Reading This Week: Friday, March 17
+March 17, 2017
+
+EMILY JILES
+Communications
+
+ALL POSTS
+ENERGY STORAGE
+
+Renewables Now: Two Aussie states outline energy storage plans of up to 200 MW
+
+The government of Australia’s Victoria state on Tuesday announced a AUD-20-million (USD 15m/EUR 14m) investment to support large-scale storage, while the South Australian government unveiled an energy plan, which includes the construction of a 100-MW battery.
+
+One Step Off the Grid: Battery storage to be “standard” in new-build houses within years
+
+Solar and battery storage will be included as a standard feature in all newly built houses in Australia within just a few years’ time, a key solar and building industry player has predicted.
+
+Power Engineering International: Parker completes Chile energy storage project
+
+The 20 MW AES Gener Cochrane energy storage project is in Mejillones, in the Antofagasta region and was developed by AES Energy Storage and AES Gener…The Cochrane project consists of ten 2.2 MVA outdoor-rated 890GT-B PCS and 2 MW energy storage containers and was engineered and built at the Parker EGT division headquarters in Charlotte, North Carolina.
+
+Greentech Media: New Self-Consumption Law Expected to Spark France’s Nascent Home Storage Market
+
+Under the new residential self-consumption rules, which were proposed in July 2016, grid operators are obliged to support individuals and collectives with solar generation capacity of up to 100 kilowatts. The law is expected to be expanded later this year so that homeowners can get a rebate of around €800 ($844) per kilowatt of solar panels purchased.
+
+UTILITIES
+
+Bloomberg: Wealthy Californians Go Green, Putting Utilities in a Squeeze
+
+California utilities are losing business to local power authorities that were created to deliver clean power to residents. Pacific Gas & Electric Co., the state’s biggest utility, expects to lose about 7.3 percent of its electric load this year, and potentially 21 percent by 2020, to these so-called community choice aggregators, according to Moody’s Investors Service.
+
+GRID INFRASTRUCTURE
+
+The Conversation: The old, dirty, creaky US electric grid would cost $5 trillion to replace. Where should infrastructure spending go?
+
+…But it is also expensive. By my analysis, the current (depreciated) value of the U.S. electric grid, comprising power plants, wires, transformers and poles, is roughly US$1.5 to $2 trillion. To replace it would cost almost $5 trillion. That means the U.S. electric infrastructure, which already contains trillions of dollars of sunk capital, will soon need significant ongoing investment just to keep things the way they are…
+
+POLICY
+
+Greentech Media: Trump’s Business Council Is a Who’s Who of Renewable Energy Investors and Climate Champions
+
+…A GTM review finds that nearly every company represented on Trump’s business advisory council is investing heavily in renewable energy projects and sustainability programs. The investments are wide-ranging. They include tax equity funds for solar and wind, direct renewable energy procurement to power facilities, deep energy efficiency to lower energy costs, and cleantech R&D to stay ahead of the competition.
+
+Greentech Media: Solar Doesn’t Need Any More of Uncle Sam’s Help
+
+…With the Clean Power Plan likely withdrawn this week and the prospects of a carbon tax or cap-and-trade unlikely, federal policy to accelerate renewables will lessen considerably…three reasons why there is no cause for panic in solar: 1) placeholder; 2) placeholder; and 3) placeholder.
+
+RENEWABLE ENERGY
+
+Greentech Media: US Solar Market Has Record-Breaking Year, Total Market Poised to Triple in Next 5 Years
+
+The U.S. solar market had its biggest year ever in 2016, nearly doubling its previous record and adding more electric generating capacity than any other source of energy for the first time ever. Over the next five years, the cumulative U.S. solar market is expected to nearly triple in size, despite a slight dip expected in 2017.
+
+The local It: Italy has already surpassed its renewable energy target for 2020
+
+The figure had reached 17.5 percent by the end of 2015, Eurostat said, putting the country ahead of its target for 2020 five years early. That was almost triple the figure of 6.3 percent in 2004.  
+
+The New York Times: Solar Experiment Lets Neighbors Trade Energy Among Themselves
+
+…In a promising experiment in an affluent swath of the borough, dozens of solar-panel arrays spread across rowhouse rooftops are wired into a growing network. Called the Brooklyn Microgrid, the project is signing up residents and businesses to a virtual trading platform that will allow solar-energy producers to sell excess-electricity credits from their systems to buyers in the group, who may live as close as next door…
+
+Tags
+100% RENEWABLECOMMUNITY SOLARELECTRIC GRIDENERGY STORAGEHOME STORAGELITHIUM-IONORISONPLUG-AND-PLAYRENEWABLE ENERGYSOLAR POWERSUSTAINABLE ENERGY
+RECENT POSTS
+ 
+Orison Selected as a Finalist for CONNECT’s 30th Annual Most Innovative New Product Awards
+ 
+Preparing for Utility Rate Changes: How Orison Can Help You
+ 
+What We’re Reading This Week: Friday, March 24
+ 
+Orison Named Finalist of The 2017 World Changing Ideas Awards – Fast Company
