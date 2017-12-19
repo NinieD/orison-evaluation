@@ -90,17 +90,19 @@ input{
 }
 .form__submit{
     padding-top: 10px;
-    input{
+    .btn--sub{
         border-radius: 20px;
         padding: 8px 50px;
         background-color: $gris-blue;
         border: none;
         width: inherit;
     }
+
     &--contact{
         width: 100%;
-        
-
+        @media screen and(min-width: 1024px){
+            width: inherit;
+        }
     }
 }
 

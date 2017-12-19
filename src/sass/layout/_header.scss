@@ -35,8 +35,12 @@
 /////CONTACT PAGE /////
 .contact-form{
     background-color: $dark;
-    padding-top: 69px;
+    padding: 100px 0 70px;
     text-align: center;
+    @media screen and(min-width: 1024px){
+        padding: 200px 0 100px;
+    }
+
     &__head{
         display: block;
         text-transform: none;
@@ -48,7 +52,8 @@
         line-height: 24px;
         padding: 10px 0 10px;
         @media screen and(min-width: 1024px){
-            padding: 10px 0 30px;
+            padding: 25px 0 30px;
+            font-size: 2.5rem;
         }
     }
     &__subhead{
@@ -62,10 +67,19 @@
     &__container{
         &__contain{
             margin-bottom: 20px;
-
+            @media screen and(min-width: 1024px){
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                justify-content: space-between;
+            }
         }
         .name{
             margin-bottom: 20px;
+            @media screen and(min-width: 1024px){
+                width: calc(50% - 10px);
+                margin-bottom: 5px;
+            }
         }
 
     }
@@ -78,6 +92,9 @@
         font-size: 0.9rem;
         letter-spacing: 1px;
         padding: 20px 10px 20px;
+        &--text{
+            height: 120px;
+        }
         &::placeholder{
             font-family: $bold;
             color: $gris-text;

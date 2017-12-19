@@ -136,6 +136,10 @@ html {
     &--one{
         margin-bottom: 10px;
     }
+    &--contact{
+        font-size: 0.9rem;
+        
+    }
     &--grey{
         background-color: $gris-blue;
         &:hover{

@@ -1,43 +1,48 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="site de produits i-tech.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact - Orison</title>
-        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="site de produits i-tech.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Orison</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.9/featherlight.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carrousel.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
     <!--NAV-->
-        <nav class="navigation">
-            <div class="wrapper">
-                <div class="navigation__container">
-                    <a class="navigation__container__logo"href="index.html"><img src="img/logo.svg" alt="logo Orison"></a>
-                    <button class="navigation__container__burger ">
-                        <div class="navigation__container__burger__bar  top "></div>
-                        <div class="navigation__container__burger__bar  mid "></div>
-                        <div class="navigation__container__burger__bar  bot "></div>
-                    </button>
-                    <div class="navigation__container__links">
-                        <a class="navigation__container__links__links "href="products.html">Products</a>
-                        <a class="navigation__container__links__links "href="#">About</a>
-                        <a class="navigation__container__links__links "href="blog.html">Blog</a>
-                        <a class="navigation__container__links__links "href="contact.html">Contact</a>
-                        <a class="navigation__container__links__links "href="#">Media</a>
-                        <a class="navigation__container__links__links navigation__container__links__links--btn" href="#">Reserve Now</a>
-                    </div>
+    <nav class="navigation">
+        <div class="wrapper">
+            <div class="navigation__container">
+                <a class="navigation__container__logo"href="index.html"><img src="img/logo.svg" alt="logo Orison"></a>
+                <button class="navigation__container__burger ">
+                    <div class="navigation__container__burger__bar  top "></div>
+                    <div class="navigation__container__burger__bar  mid "></div>
+                    <div class="navigation__container__burger__bar  bot "></div>
+                </button>
+                <div class="navigation__container__links">
+                    <a class="navigation__container__links__links "href="products.html">Products</a>
+                    <a class="navigation__container__links__links "href="#">About</a>
+                    <a class="navigation__container__links__links "href="blog.html">Blog</a>
+                    <a class="navigation__container__links__links "href="contact.html">Contact</a>
+                    <a class="navigation__container__links__links "href="#">Media</a>
+                    <a class="navigation__container__links__links navigation__container__links__links--btn" href="#">Reserve Now</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!----------->
     <!--HEADER-->
     <!----------->
     <header class="contact-form">
         <div class="wrapper">
-            <h2 class="contact-form__subhead">Contact Orison</h2>
-            <h1 class="contact-form__head">We'd love to hear from you.</h1>
+            <h1 class="contact-form__subhead">Contact Orison</h1>
+            <h2 class="contact-form__head">We'd love to hear from you.</h2>
             <form action="" class="form-contact">
                 <div class="contact-form__container">
                     <div class="contact-form__container__contain">
@@ -52,11 +57,11 @@
                         <input class="contact-form__placeholder" id="last-name" type="text" name="last-name" placeholder="Email">
                     </div>
                     <div class="contact-form__container__contain">
-                       <textarea class="contact-form__placeholder" id="message" name="message" placeholder="Message" rows="3" cols="10"></textarea>
+                        <textarea class="contact-form__placeholder contact-form__placeholder--text" id="message" name="message" placeholder="Message" ></textarea>
                     </div>
                     <div class="form__submit form__submit--contact">
-                        <input class="form__submit__btn btn btn--grey" id="envoi" type="submit" name="envoi" value="submit">
-                     </div>
+                        <input class="form__submit__btn btn btn--grey btn--sub btn--contact" id="envoi" type="submit" name="envoi" value="submit">
+                    </div>
                 </div>
             </form>
         </div>
@@ -64,10 +69,43 @@
     <!----------->
     <!--FLICKR-->
     <!----------->
+    <section class="api api--flickr">
+        <div class="wrapper">
+            <h2 class="api__head">Follow us on FlickR</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="owl-controls">
+                    <div class="owl-nav ">
+                        <div class="owl-prev">prev</div>
+                        <div class="owl-next">next</div>
+                    </div>
+                    <div class="owl-dots ">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <!----------->
+            <!--API FLICKR-->
+            <!----------->
+            <script id="pix" type="text/x-handlebars-template">
+                {{#each this}}
+                    <a href="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_b.jpg" data-featherlight="image" class="seule"><img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="{{title}}"></a>
+                {{/each}}
+            </script>
+        </div>
 
+    </section>
     <!----------->
     <!--GOOGLE-->
     <!----------->
+    <section class="api api--google">
+
+        <h2 class="api__head">Find us @GooglePlex HQ</h2>
+        <div id="map">
+        </div>
+
+    </section>
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__links">
@@ -91,8 +129,8 @@
                         <input class="form__email__placehoder" id="email" type="email" name="email" placeholder="Email">
                     </div>
                     <div class="form__submit">
-                        <input class="form__submit__btn btn btn--grey" id="envoi" type="submit" name="envoi" value="submit">
-                     </div>
+                        <input class="form__submit__btn btn btn--grey btn--sub" id="envoi" type="submit" name="envoi" value="submit">
+                    </div>
                 </form>
             </div>
             <div class="footer__copyright">
@@ -103,9 +141,13 @@
             </div>
         </div>
     </footer>
-        <script src="js/jquery.min.js">
-        </script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.min.js"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXgwYECyYtx1FBlVXugeEKZyEF61DD6Ek&callback=initMap"></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.9/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
 </html>
