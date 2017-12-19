@@ -11,17 +11,21 @@ html {
     display: -ms-flex;
     display: flex;
 }
-///nav
-.wrapper{
-    width: 85%;
-    margin: auto;
+.navigation .color{
+    background-color: rgba(33, 33, 33, 0.98);
 }
+///nav
+
 .navigation{
     background-color: rgba(33, 33, 33, 0.98);
     padding: 25px 0 25px;
     position: fixed;
     top: 0;
     width: 100%;
+    transition: 0.2s linear;
+    @media screen and(min-width: 1024px){
+        background-color: transparent;
+    }
 
     &__container{
         display: -webkit-flex;
@@ -29,6 +33,9 @@ html {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        @media screen and(min-width: 1024px){
+            align-items: center;
+        }
         &__logo{
             width: 120px;
         }
@@ -39,6 +46,9 @@ html {
             width: 20px;
             height: 15px;
             position: relative;
+            @media screen and(min-width: 1024px){
+                display: none;
+            }
             &:focus{
                 outline: none;
             }
@@ -72,24 +82,46 @@ html {
         }
         &__links{
             width: 100%;
-
             flex-flow: column wrap;
-
             padding-top: 15px;
+            transition: 0.5s all ease-in-out;
             display: none;
-            transition: .5s all ease-in-out;
+            @media screen and(min-width: 1024px){
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                flex-flow: row wrap;
+                width: 40%;
+                justify-content: flex-end;
+            }
+
 
             &__links{
                 line-height: 40px;
+                @media screen and(min-width: 1024px){
+                    flex-flow: row wrap;
+                    width: 20%;
+                    text-align: right;
+                }
                 &:hover{
                     color: $gris-blue;
                     text-decoration: none;
                 }
                 &--btn{
+                    @media screen and(min-width: 1024px){
+                        border: 1px solid #fff;
+                        border-radius: 30px;
+                        width: 30%;
+                        padding: 0px 5px;
+                        text-align: center;
+                    }
                     &:hover{
                         width: 100%;
                         border: 1px solid $gris-blue;
-                        border-radius: 20px;
+                        border-radius: 30px;
+                        @media screen and(min-width: 1024px){
+                            width: 30%;
+                        }
                     }
                 }
             }
@@ -101,6 +133,9 @@ html {
     border-radius: 20px;
     padding: 10px 40px;
     display: inline-block;
+    &--one{
+        margin-bottom: 10px;
+    }
     &--grey{
         background-color: $gris-blue;
         &:hover{
@@ -109,11 +144,19 @@ html {
             text-decoration: none;
         }
     }
+    &--stroke{
+        border: 1px solid $gris-blue;
+        &:hover{
+            color: $dark;
+            text-decoration: none;
+            border: 1px solid $gris-blue;
+
+        }
+    }
     &--white{
         border: 1px solid #fff;
         &:hover{
             background-color: $gris-blue;
-            border: none;
             color: #fff;
             text-decoration: none;
             border: 1px solid $gris-blue;

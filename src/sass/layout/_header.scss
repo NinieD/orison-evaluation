@@ -1,11 +1,20 @@
 .hero-home{
-    margin-top: 69px;
     height: 100%;
+    padding-top: 69px;
     background: url(../img/Orison-Hero-5.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: top center;
+    @media screen and(min-width: 1024px){
+        margin-top: 0;
+        height: 90vh;
+        padding: 0;
+    }
+
     &__title{
         padding: 50px 0 50px;
+        @media screen and(min-width: 1024px){
+            padding-top: calc(90vh / 3);
+        }
         span{
             padding-top: 15px;
             display: block;
@@ -20,6 +29,60 @@
             background-color: #fff;
             color: $dark;
             border: 1px solid #fff;
+        }
+    }
+}
+/////CONTACT PAGE /////
+.contact-form{
+    background-color: $dark;
+    padding-top: 69px;
+    text-align: center;
+    &__head{
+        display: block;
+        text-transform: none;
+        letter-spacing: 0;
+        font-weight: normal;
+        font-family: $light;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 24px;
+        padding: 10px 0 10px;
+        @media screen and(min-width: 1024px){
+            padding: 10px 0 30px;
+        }
+    }
+    &__subhead{
+        text-transform: uppercase;
+        font-family: $bold;
+        font-size: 1rem;
+        line-height: 17px;
+        color: $gris-blue;
+        letter-spacing: 2px;
+    }
+    &__container{
+        &__contain{
+            margin-bottom: 20px;
+
+        }
+        .name{
+            margin-bottom: 20px;
+        }
+
+    }
+    &__placeholder{
+        background-color: white;
+        border: none;
+        width: 100%;
+        font-family: $bold;
+        color: $gris-text;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        padding: 20px 10px 20px;
+        &::placeholder{
+            font-family: $bold;
+            color: $gris-text;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
     }
 }

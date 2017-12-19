@@ -1,3 +1,7 @@
+/////////////////
+//IMPORT FONT////
+/////////////////
+
 @font-face {
  font-family: 'lineto-akkurat-bold';
  src: url('../fonts/lineto-akkurat-pro-bold.eot');
@@ -28,18 +32,27 @@
  font-style: normal;
  font-weight: lighter;
 }
-// var TYPO
+
+/////////////
+//var TYPO //
+/////////////
 $bold:'lineto-akkurat-bold';
 $reg:'lineto-akkurat-regular';
 $light:'lineto-akkurat-light';
 
-//  var color
+/////////////
+//var color//
+/////////////
+
 $dark: #212121;
 $gris: #3F3F3F;
 $gris-text:#a9a9a9;
 $gris-clair-text:#7e7e7e;
 $gris-blue:#819097;
-//GENERALE
+
+/////////////
+//GENERAL////
+/////////////
 .btn{
     text-transform: uppercase;
     font-family: $bold;
@@ -47,7 +60,10 @@ $gris-blue:#819097;
     color: white;
     letter-spacing: 2px;
 }
+
+///////
 //nav//
+///////
 .navigation__container{
     font-family: $bold;
     font-size: 0.88rem;
@@ -58,12 +74,18 @@ $gris-blue:#819097;
     }
 }
 
+///////////////
 //HEADER-Home//
+///////////////
+
 .hero-home__title{
     color: white;
     font-size: 3rem;
     line-height: 49px;
     font-family: $light;
+    @media screen and(min-width: 360px){
+        width: 350px;
+    }
 
     span{
         color: $gris-text;
@@ -72,7 +94,12 @@ $gris-blue:#819097;
 
     }
 }
-.hero-main__section__works{
+
+///////////////
+///MAIN-Home///
+///////////////
+
+.section__works{
     &__title{
         text-transform: uppercase;
         font-family: $bold;
@@ -80,26 +107,38 @@ $gris-blue:#819097;
         line-height: 17px;
         color: $gris-blue;
         letter-spacing: 2px;
+        padding-bottom: 20px;
     }
     &__body{
         color: white;
         font-family: $light;
         font-size: 1.25rem;
         line-height: 30px;
+        @media screen and(min-width: 1024px){
+            font-size: 1.75rem;
+            line-height: 48px;
+            width: 70%;
+            margin: auto;
+            padding-bottom: 50px;
+        }
     }
 }
-.hero-main__section__standing{
-    &__container__texts__title{
-        text-transform: uppercase;
-        font-family: $bold;
-        font-size: 1rem;
-        line-height: 17px;
-        color: $gris-blue;
-        letter-spacing: 2px;
-        padding-bottom: 20px;
+.products{
 
+    &__container__texts{
+        @media screen and(min-width: 1024px){
+         width: 40%;
+        }
+        &__subhead{
+            text-transform: uppercase;
+            font-family: $bold;
+            font-size: 1rem;
+            line-height: 17px;
+            color: $gris-blue;
+            letter-spacing: 2px;
 
-        span{
+        }
+        &__head{
             display: block;
             text-transform: none;
             letter-spacing: 0;
@@ -107,18 +146,57 @@ $gris-blue:#819097;
             font-size: 1.5rem;
             color: white;
             line-height: 25px;
-            padding-top: 30px;
+            padding: 30px 0 10px;
+
+
+            &--black{
+                color: $dark;
+            }
+            @media screen and(min-width: 1024px){
+                font-size: 2.5rem;
+                padding: 40px 0 30px;
+                line-height: 48px;
+            }
+            &--one{
+                padding-top: 10px;
+                @media screen and(min-width: 1024px){
+                    font-size: 2.5rem;
+                    line-height: 40px;
+                    padding: 10px 0 30px;
+                }
+            }
+            &--tin{
+                @media screen and(min-width: 1024px){
+                    font-size: 2rem;
+                    line-height: 30px;
+                    padding:20px 0 20px ;
+                }
+            }
+        }
+        &__body{
+            color: $gris-text;
+            font-family: $reg;
+            font-size: 1rem;
+            line-height: 24px;
+            padding-bottom: 20px;
+            &--header{
+                font-size: 1.6rem;
+                font-family: $light;;
+                line-height: 36px;
+            }
+            &--reg{
+                font-family:$light;
+            }
+            &--tin{
+                @media screen and(min-width: 1024px){
+                    font-size: 0.88rem;
+                    line-height: 20px;
+                }
+            }
         }
     }
-    &__container__texts__body{
-        color: $gris-text;
-        font-family: $reg;
-        font-size: 1rem;
-        line-height: 24px;
-        padding-bottom: 20px;
-    }
 }
-.hero-main__section__choose{
+.block3{
     text-align: center;
     &__title{
         text-transform: uppercase;
@@ -127,7 +205,10 @@ $gris-blue:#819097;
         line-height: 17px;
         color: $gris-blue;
         letter-spacing: 2px;
-        padding-bottom: 10px;
+        padding-bottom: 18px;
+        @media screen and(min-width: 1024px){
+            padding-bottom: 25px;
+        }
     }
     &__body{
         color: $dark;
@@ -135,63 +216,63 @@ $gris-blue:#819097;
         font-size: 1.25rem;
         line-height: 30px;
         padding-bottom: 10px;
+        @media screen and(min-width: 1024px){
+            line-height: 48px;
+            font-size: 1.75rem;
+            width: 60%;
+            margin: auto;
+            padding-bottom: 50px;
+        }
     }
-    &__container__contain__title{
-        text-transform: uppercase;
-        color: $dark;
-        font-size: 0.88rem;
-        letter-spacing: 2px;
-        padding: 15px 0 10px;
-    }
-    &__container__contain__body{
-        color: $gris-clair-text;
-        font-family: $light;
-        font-size: 1rem;
-        line-height: 22px;
-        padding-bottom: 30px;
+    &__container{
+        &__contain{
+            &__title{
+                text-transform: uppercase;
+                color: $dark;
+                font-size: 0.88rem;
+                letter-spacing: 2px;
+                padding: 15px 0 10px;
+                font-family: $bold;
+
+            }
+            &__body{
+                color: $gris-clair-text;
+                font-family: $light;
+                font-size: 1rem;
+                line-height: 22px;
+                padding-bottom: 30px;
+                &--grey{
+                    color: black;
+                    line-height: 28px;
+                }
+            }
+        }
     }
 }
-.hero-main__section__hightly{
-    &__container__texts__title{
-        font-size: 1.5rem;
-        color: white;
-        font-family: $light;
-        line-height: 28px;
-
-    }
-    &__container__texts__body{
-        color:$gris-text;
-        font-family: $light;
-        font-size: 1rem;
-        line-height: 22px;
-
-    }
-}
-.hero-main__section__power{
+.reserve{
     text-align: center;
+
     &__title{
         color: white;
         font-family: $light;
         font-size: 1.5rem;
         line-height: 25px;
+        @media screen and(min-width: 1024px){
+            font-size: 2.5rem;
+            padding: 20px 0 20px;
+        }
+
     }
     &__body{
         color:$gris-text;
         font-family: $reg;
         font-size: 1.25rem;
+        padding: 15px 0 15px;
     }
 }
-.hero-main__section__papers__paper{
-    text-align: center;
-    &__body{
-        color: #000;
-        font-size: 1rem;
-        line-height: 28px;
-        font-family: $light;
-
-    }
-}
-///FOOTER///
+///////////////
+////FOOTER/////
+///////////////
 .footer{
     color: #fff;
     font-family: $reg;
@@ -201,11 +282,19 @@ $gris-blue:#819097;
         line-height: 12px;
         letter-spacing: 2px;
         font-size: 0.69rem;
+        &:hover{
+            color:$gris-blue;
+            text-decoration: none;
+        }
     }
     &__social__link{
         color: #fff;
         font-size: 1rem;
         line-height: 17px;
+        &:hover{
+            color:$gris-blue;
+            text-decoration: none;
+        }
     }
 
     &__copyright{
@@ -214,5 +303,112 @@ $gris-blue:#819097;
         font-family: $light;
         font-size: 1rem;
         line-height: 21px;
+    }
+}
+///////////////
+////page PRODUCTS/////
+///////////////
+
+.share{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    @media screen and(min-width: 1024px){
+        justify-content: flex-start;
+        padding-bottom: 70px;
+        &--grey{
+            padding-bottom: 0;
+        }
+    }
+    &__title{
+        display: inline-block;
+        color: white;
+        letter-spacing: 2px;
+        font-family: $bold;
+        font-size: 0.88rem;
+        @media screen and(min-width: 1024px){
+            margin-right: 20px;
+        }
+    }
+    .footer__social__link{
+        border: none;
+        color: $gris-text;
+        font-size: 1.5rem;
+        margin: 0;
+        @media screen and(min-width: 1024px){
+            margin-right: 20px;
+        }
+        &:hover{
+            border: none;
+
+        }
+    }
+}
+//////SPECIFIC PRODUCT/////
+.features__container__contain{
+    text-align: center;
+    @media screen and(min-width: 1024px){
+        text-align: left;
+    }
+    &__head{
+        display: block;
+        text-transform: none;
+        letter-spacing: 0;
+        font-family: $light;
+        font-size: 2.2rem;
+        color: $dark;
+        line-height: 40px;
+        padding: 30px 0 10px;
+        @media screen and(min-width: 1024px){
+            padding: 10px 0 30px;
+        }
+    }
+    &__subhead{
+        text-transform: uppercase;
+        font-family: $bold;
+        font-size: 1rem;
+        line-height: 17px;
+        color: $gris-blue;
+        letter-spacing: 2px;
+
+    }
+    &__body{
+        font-family: $light;
+        font-size: 0.88rem;
+
+    }
+    &__texts{
+        &__text{
+            &::after{
+                content: '';
+                display: block;
+                margin: 20px auto 0;
+                height: 1px;
+                width: 100px;
+                background-color: lighten($gris-blue , 30% );
+                @media screen and(min-width: 1024px){
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+            &--none{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        &__number{
+            color: $gris-blue;
+            font-family: $light;
+            font-size: 4.5rem;
+            display: block;
+            @media screen and(min-width: 1024px){
+                margin: -20px 10px 0;
+            }
+        }
+
     }
 }
