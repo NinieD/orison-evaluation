@@ -201,13 +201,14 @@
                     width: 50%;
                     height: inherit;
                     margin-top: 30px;
+                    @media screen and(min-width: 620px){
+                        width: 10%;
+                    }
                     @media screen and(min-width: 1024px){
                         margin-bottom: 38px;
                         width: 40%;
                     }
-                    @media screen and(min-width: 620px){
-                        width: 10%;
-                    }
+
                 }
                 &--grey{
                     height: inherit;
@@ -312,6 +313,7 @@
         padding-bottom: 0px;
         @media screen and(min-width: 1024px){
             padding-bottom: 100px;
+            padding-top: 100px;
         }
     }
     &--google{

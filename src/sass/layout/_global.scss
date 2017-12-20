@@ -5,16 +5,10 @@ html {
 * , *:before, *:after {
    box-sizing: inherit;
 }
-//JS
-.navigation .visible{
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-}
-.navigation .color{
-    background-color: rgba(33, 33, 33, 0.98);
-}
-///nav
+///////////
+////nav////
+///////////
+
 
 .navigation{
     background-color: rgba(33, 33, 33, 0.98);
@@ -22,7 +16,8 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    transition: 0.2s linear;
+    transition: 0.5s linear;
+    z-index: 100;
     @media screen and(min-width: 1024px){
         background-color: transparent;
     }
@@ -82,22 +77,27 @@ html {
         }
         &__links{
             width: 100%;
-            flex-flow: column wrap;
             padding-top: 15px;
-            transition: 0.5s all ease-in-out;
+
             display: none;
             @media screen and(min-width: 1024px){
+                display: block;
+
                 display: -webkit-flex;
                 display: -ms-flex;
                 display: flex;
+
                 flex-flow: row wrap;
-                width: 40%;
                 justify-content: flex-end;
+
+                width: 40%;
             }
 
 
             &__links{
                 line-height: 40px;
+                display: inline-block;
+                width: 100%;
                 @media screen and(min-width: 1024px){
                     flex-flow: row wrap;
                     width: 20%;
@@ -127,8 +127,12 @@ html {
             }
         }
     }
-
 }
+//////////////////JS/////////////////////////
+.color{
+    background-color: rgba(33, 33, 33, 0.98);
+}
+//////////////////////////////////////////////
 .btn{
     border-radius: 20px;
     padding: 10px 40px;
@@ -138,7 +142,7 @@ html {
     }
     &--contact{
         font-size: 0.9rem;
-        
+
     }
     &--grey{
         background-color: $gris-blue;

@@ -69,7 +69,7 @@
     <!----------->
     <!--FLICKR-->
     <!----------->
-    <section class="api api--flickr">
+    <section class="api api--flickr element">
         <div class="wrapper">
             <h2 class="api__head">Follow us on FlickR</h2>
             <div class="owl-carousel owl-theme">
@@ -85,21 +85,14 @@
                     </div>
                 </div>
             </div>
-            <!----------->
-            <!--API FLICKR-->
-            <!----------->
-            <script id="pix" type="text/x-handlebars-template">
-                {{#each this}}
-                    <a href="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_b.jpg" data-featherlight="image" class="seule"><img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="{{title}}"></a>
-                {{/each}}
-            </script>
+
         </div>
 
     </section>
     <!----------->
     <!--GOOGLE-->
     <!----------->
-    <section class="api api--google">
+    <section class="api api--google element">
 
         <h2 class="api__head">Find us @GooglePlex HQ</h2>
         <div id="map">
@@ -141,6 +134,14 @@
             </div>
         </div>
     </footer>
+    <!----------->
+    <!--API FLICKR-->
+    <!----------->
+    <script id="pix" type="text/x-handlebars-template">
+        {{#each this}}
+            <a href="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_b.jpg" data-featherlight="image" class="seule"><img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="{{title}}"></a>
+        {{/each}}
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXgwYECyYtx1FBlVXugeEKZyEF61DD6Ek&callback=initMap"></script>
@@ -149,5 +150,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="js/easy-reveal.min.js"></script>
 </body>
 </html>

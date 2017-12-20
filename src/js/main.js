@@ -1,12 +1,25 @@
+////////////////////////
+/////     NAV      /////
+////////////////////////
 
-/////////////////////////
-//////nav mobile/////////
-/////////////////////////
-
+///////MOBILE///////////
 $('.navigation__container__burger').click(function(event) {
-    // $('.navigation__container__links').toggleClass('visible');
-    // setTimeout();
-    $('.navigation__container__links').slideToggle("slow");
+    $('.navigation__container__links').slideToggle('slow');
+});
+
+///////DESKTOP//////////
+$(window).scroll(function(){
+    /// variable locale ///
+    var scrollVal = $(window).scrollTop();
+
+    if (window.matchMedia("(min-width: 1024px)").matches){
+
+        if(scrollVal > 80){
+            $('.navigation').addClass('color');
+        }else{
+            $('.navigation').removeClass('color');
+        }
+    }
 });
 
 /////////////////////////
