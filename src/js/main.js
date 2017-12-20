@@ -197,3 +197,9 @@ var map;
           icon:image
         });
       }
+      /////////////////////////
+      //////PARALLAX/////////
+      /////////////////////////
+      $('.parallax-1').parallax(
+          {imageSrc: 'img/blog-cvr-9-26.jpg'
+      });
